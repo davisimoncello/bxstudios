@@ -1,3 +1,4 @@
+/* Estilo padrão */
 html {
     scroll-behavior: smooth;
 }
@@ -35,8 +36,26 @@ nav .logo img:hover {
     transform: scale(1.05);
 }
 
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
 .hero {
-    max-width: 1200px;
     text-align: center;
     padding: 100px 20px;
     background-color: #fff;
@@ -70,7 +89,6 @@ nav .logo img:hover {
     transform: scale(1.05);
 }
 
-/* Seção About */
 .about {
     text-align: center;
     padding: 20px 20px;
@@ -91,49 +109,6 @@ nav .logo img:hover {
     max-width: 700px;
     margin: 0 auto 40px auto;
     color: #555;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 20px;
-}
-
-nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #007BFF;
-}
-.team-photo {
-    width: 80%;
-    max-width: 600px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.team-photo:hover {
-    transform: scale(1.02);
 }
 
 .highlight-text {
@@ -177,4 +152,55 @@ nav ul li a:hover {
 
 .about:hover {
     background-color: #ffffff;
+}
+
+/* Estilo para mobile */
+@media (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none; /* Esconde os itens do menu de navegação */
+    }
+
+    .hero h1 {
+        font-size: 48px; /* Ajusta o tamanho do texto no celular */
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .cta-button {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .about h1 {
+        font-size: 36px;
+    }
+
+    .highlight-text h2 {
+        font-size: 28px;
+    }
+
+    .highlight-text p {
+        font-size: 16px;
+    }
 }
