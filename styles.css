@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
+footer{
+    text-align: center;
+}
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f7f7f7;
@@ -113,7 +117,6 @@ nav ul li a:hover {
 
 .highlight-text {
     background-color: #370044;
-    color: #ffffff;
     padding: 40px 20px;
     margin: 60px 0;
     border-radius: 15px;
@@ -122,13 +125,11 @@ nav ul li a:hover {
 
 .highlight-text h2 {
     font-size: 36px;
-    margin-bottom: 10px;
+    color: #ffffff;
 }
-
-.highlight-text p {
-    font-size: 18px;
+.light-text{
+    color: #f7f7f7;
 }
-
 .social-media {
     display: flex;
     justify-content: center;
@@ -203,4 +204,83 @@ nav ul li a:hover {
     .highlight-text p {
         font-size: 16px;
     }
+}
+#darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#darkModeToggle:hover {
+    background-color: var(--highlight-bg-color);
+}
+:root {
+    /* Paleta de cores - Modo Claro (Padrão) */
+    --background-color: #f7f7f7;
+    --text-color: #1c1c1c;
+    --hero-bg-color: #fff;
+    --button-bg-color: #370044;
+    --button-text-color: #ffffff;
+    --highlight-bg-color: #370044;
+    --highlight-text-color: #ffffff;
+    --social-icon-color: #6f337d;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: var(--hero-bg-color);
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Highlight Text */
+.highlight-text {
+    background-color: var(--highlight-bg-color);
+    padding: 40px 20px;
+    margin: 60px 0;
+    border-radius: 15px;
+    color: var(--highlight-text-color);
+}
+
+/* Ícones sociais */
+.social-media a {
+    margin: 0 15px;
+    transition: transform 0.3s;
+    color: var(--social-icon-color);
+}
+
+/* Modo escuro */
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --hero-bg-color: #1f1f1f;
+    --button-bg-color: #bb86fc;
+    --button-text-color: #1c1c1c;
+    --highlight-bg-color: #bb86fc;
+    --highlight-text-color: #1c1c1c;
+    --social-icon-color: #bb86fc;
 }

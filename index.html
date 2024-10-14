@@ -18,6 +18,16 @@
         </nav>
     </header>
 
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+
+<script>
+    const toggleButton = document.getElementById('darkModeToggle');
+    toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+
+
     <section class="hero">
         <h1>Welcome to BXStudios</h1>
         <p>We are a Roblox group dedicated to creating unique and engaging games.</p>
@@ -27,11 +37,11 @@
     <!-- About Section -->
     <section id="about" class="about">
         <h1>About BXStudios</h1>
-        <p>At BXStudios, we create unique experiences that bring our imagination to life. Our games aren't just for playing—they're for exploring, creating, and pushing the limits of what's possible on Roblox.</p>
+        <p>
+            BXStudios is a group created in 2024 on Roblox by a team of 6 people with the purpose of developing games and handling requests on the Roblox platform.</p>
         
         <div class="highlight-text">
             <h2>Innovate. Create. Play.</h2>
-            <p class="light-text">Join us in revolutionizing the way games are made.</p>
         </div>
 
         <h2>Connect with Us</h2>
