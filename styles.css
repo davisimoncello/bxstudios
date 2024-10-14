@@ -17,8 +17,7 @@ body {
 header {
     width: 100%;
     background-color: #ffffff;
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgb(255, 255, 255);
+    padding: 10px 0;
 }
 
 nav {
@@ -27,12 +26,17 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+}
+
+nav .logo {
+    padding: 0;
+    margin: 0;
 }
 
 nav .logo img {
-    width: 120px;
-    transition: transform 0.3s;
+    width: 100px;
+    vertical-align: middle; /* Remove o espaço extra abaixo da imagem */
+    display: block; /* Faz a imagem ocupar apenas o seu espaço */
 }
 
 nav .logo img:hover {
@@ -55,18 +59,20 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #007BFF;
+    color: #370044;
 }
 
 .hero {
     text-align: center;
-    padding: 50px 50px;
-    background-color: #fff;
+    padding: 200px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: var(--hero-bg-color);
 }
 
 .hero h1 {
+    margin: 0;
     font-size: 64px;
-    margin-bottom: 20px;
     font-weight: bold;
     letter-spacing: -1px;
 }
@@ -237,13 +243,6 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.8;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 80px 80px;
-    background-color: var(--hero-bg-color);
 }
 
 .cta-button {
