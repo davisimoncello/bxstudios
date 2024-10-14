@@ -283,3 +283,42 @@ body.dark-mode {
     --highlight-text-color: #1c1c1c;
     --social-icon-color: #bb86fc;
 }
+
+/* Cookie Consent Styles */
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #370044;
+    color: white;
+    padding: 15px;
+    display: none; /* Começa invisível */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cookie-consent p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.cookie-consent a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.cookie-consent button {
+    background-color: #bb86fc;
+    color: #1c1c1c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cookie-consent button:hover {
+    background-color: #9c69d1;
+}

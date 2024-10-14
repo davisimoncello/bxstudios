@@ -52,5 +52,21 @@
     <footer>
         <p>&copy; 2024 BXStudios. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Cookie Consent Script
+        const cookieConsent = document.getElementById('cookieConsent');
+        const acceptCookiesButton = document.getElementById('acceptCookies');
+
+        // Check if cookies were accepted previously
+        if (!localStorage.getItem('cookiesAccepted')) {
+            cookieConsent.style.display = 'flex';
+        }
+
+        acceptCookiesButton.addEventListener('click', () => {
+            localStorage.setItem('cookiesAccepted', 'true');
+            cookieConsent.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
